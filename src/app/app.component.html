@@ -1,0 +1,27 @@
+<div id="container">
+  <h1 class="text-center mt-5" style="font-family: 'Lucida Sans', Geneva, Verdana, sans-serif; color:brown">
+    <i><u>Currency Converter</u></i>
+  </h1>
+  <br><br>
+  <div class="row">
+    <div class="col-2" style="padding-left: 70px;">
+      <img src="../assets/images/dollar.svg" alt="Dollar" height="50" width="40">
+    </div>
+    <div class="col-8 form-group">
+      <input type="text" placeholder="Amount In Dollar" name="dollar" id="dollar" class="form-control"
+        [(ngModel)]="dollar">
+    </div>
+    <div class="col-2"></div>
+    <div class="col-5"></div>
+    <div class="col-2">
+      <img src="../assets/images/arrow.svg" alt="Arrow" height="60" width="60">
+    </div>
+    <div class="col-5"></div>
+    <div class="col-2 mt-4" style="padding-left: 70px;">
+      <img src="../assets/images/rupee.svg" alt="Rupee" height="40" width="40">
+    </div>
+    <div class="col-8 mt-4">
+      <h4>Converted in Rupees : {{ dollar | convert | number }}</h4>
+    </div>
+  </div>
+</div>
